@@ -1171,6 +1171,8 @@ const prog_uint8_t modulation_destination_map[] PROGMEM = {
   MOD_DST_ATTACK,
   MOD_DST_LFO_1,
   MOD_DST_LFO_2,
+  MOD_DST_DRM_1,
+  MOD_DST_DRM_2,
 };
 
 //BER: This map defines order of oscillator shapes in UI (must match resource string order)

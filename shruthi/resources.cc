@@ -172,6 +172,8 @@ static const prog_char str_res_s2[] PROGMEM = "s2";
 static const prog_char str_res_r2[] PROGMEM = "r2";
 static const prog_char str_res__lf1[] PROGMEM = "lf1";
 static const prog_char str_res__lf2[] PROGMEM = "lf2";
+static const prog_char str_res__dr1[] PROGMEM = "dr1";
+static const prog_char str_res__dr2[] PROGMEM = "dr2";
 static const prog_char str_res_in1[] PROGMEM = "in1";
 static const prog_char str_res_in2[] PROGMEM = "in2";
 static const prog_char str_res_out[] PROGMEM = "out";
@@ -210,6 +212,8 @@ static const prog_char str_res_rel__2[] PROGMEM = "rel. 2";
 static const prog_char str_res_atk1S2[] PROGMEM = "atk1+2";
 static const prog_char str_res__lfo_1[] PROGMEM = "lfo 1";
 static const prog_char str_res__lfo_2[] PROGMEM = "lfo 2";
+static const prog_char str_res__drm_1[] PROGMEM = "drm 1";
+static const prog_char str_res__drm_2[] PROGMEM = "drm 2";
 static const prog_char str_res_distrt[] PROGMEM = "distrt";
 static const prog_char str_res_crushr[] PROGMEM = "crushr";
 static const prog_char str_res_Scmbfl[] PROGMEM = "+cmbfl";
@@ -420,6 +424,8 @@ static const prog_char str_res_sp[] PROGMEM = "sp";
 static const prog_char str_res_splash[] PROGMEM = "splash";
 static const prog_char str_res_preset[] PROGMEM = "preset";
 static const prog_char str_res_equal[] PROGMEM = "equal";
+static const prog_char str_res_drum1[] PROGMEM = "drum1";
+static const prog_char str_res_drum2[] PROGMEM = "drum2";
 static const prog_char str_res_just[] PROGMEM = "just";
 static const prog_char str_res_pythag[] PROGMEM = "pythag";
 static const prog_char str_res_1_4_eb[] PROGMEM = "1/4 eb";
@@ -603,6 +609,8 @@ PROGMEM const prog_char* const string_table[] = {
   str_res_atk,
   str_res__lf1,
   str_res__lf2,
+  str_res__dr1,
+  str_res__dr2,
   str_res_in1,
   str_res_in2,
   str_res_out,
@@ -643,6 +651,8 @@ PROGMEM const prog_char* const string_table[] = {
   str_res_atk1S2,
   str_res__lfo_1,
   str_res__lfo_2,
+  str_res__drm_1,
+  str_res__drm_2,
   str_res_distrt,
   str_res_crushr,
   str_res_Scmbfl,
@@ -880,6 +890,10 @@ PROGMEM const prog_char* const string_table[] = {
   str_res_filter,
   str_res_preset,
   str_res_equal,
+  str_res_drum1,
+  str_res_drum2,
+  str_res__dr1,
+  str_res__dr2,
   str_res_just,
   str_res_pythag,
   str_res_1_4_eb,

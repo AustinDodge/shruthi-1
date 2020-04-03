@@ -193,6 +193,8 @@ enum ModulationDestination {
   MOD_DST_DECAY_2,
   MOD_DST_SUSTAIN_2,
   MOD_DST_RELEASE_2,
+  MOD_DST_DRM_1,
+  MOD_DST_DRM_2,
   MOD_DST_LAST
 };
 

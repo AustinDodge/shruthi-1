@@ -225,6 +225,7 @@ inline void Voice::LoadSources() {
 
   dst_[MOD_DST_VCO_1_2_COARSE] = dst_[MOD_DST_VCO_1_2_FINE] = 8192;
   dst_[MOD_DST_VCO_1] = dst_[MOD_DST_VCO_2] = 8192;
+  dst_[MOD_DST_DRM_1] = dst_[MOD_DST_DRM_2] = 8192;
   dst_[MOD_DST_LFO_1] = dst_[MOD_DST_LFO_2] = 8192;
   dst_[MOD_DST_TRIGGER_ENV_1] = 0;
   dst_[MOD_DST_TRIGGER_ENV_2] = 0;
@@ -446,8 +447,16 @@ inline void Voice::RenderOscillators() {
       // 0 / +1 semitones by the detune option for oscillator 2.
       pitch += part.patch_.osc[1].option;
     }
-    // -16 / +16 semitones by the routed modulations.
-    pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 2;
+    
+    //drum modulation source, +/- 32 semitones
+    pitch += (dst_[MOD_DST_DRM_1 + i] - 8192) >> 1;
+    //uncomment this for original osc moduation control
+    //leave commented for finer control
+    //-16 / +16 semitones by the routed modulations.
+    //pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 2;
+
+    //comment this for original modulation control
+    pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 4;
 
     while (pitch >= kHighestNote) {
       pitch -= kOctave;

@@ -170,6 +170,8 @@ r2
 atk
  lf1
  lf2
+ dr1
+ dr2
 
 in1
 in2
@@ -212,6 +214,8 @@ rel. 2
 atk1+2
  lfo 1
  lfo 2
+ drm 1
+ drm 2
 
 distrt
 crushr
@@ -467,4 +471,9 @@ filter
 preset
 
 equal
+
+drum1
+drum2
+dr1
+dr2
 """
