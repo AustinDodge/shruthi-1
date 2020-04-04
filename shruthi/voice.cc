@@ -450,13 +450,8 @@ inline void Voice::RenderOscillators() {
     
     //drum modulation source, +/- 32 semitones
     pitch += (dst_[MOD_DST_DRM_1 + i] - 8192) >> 1;
-    //uncomment this for original osc moduation control
-    //leave commented for finer control
-    //-16 / +16 semitones by the routed modulations.
-    //pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 2;
-
-    //comment this for original modulation control
-    pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 4;
+    //replace the 5 with 2 for original osc1/osc2 behavior
+    pitch += (dst_[MOD_DST_VCO_1 + i] - 8192) >> 5;
 
     while (pitch >= kHighestNote) {
       pitch -= kOctave;
