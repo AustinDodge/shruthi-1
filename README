@@ -1,3 +1,7 @@
+This is a mod to Y A M adding features inspired by the KZ-AmbikaLIVE firmware for the Ambika synth. Specifically, it adds the Drum modulation destinations, DRM 1 and DRM 2. These function much like the OSC1 and OSC2 destinations, except the pitch range is much greater. By default, the OSC destinations on Shruthi only allow for a maximum of +/- 16 semitones, which aren't sufficient for the clicks and thumps needed for drum sounds. DRM 1 and DRM 2 allow +/- 32 semitones, letting Shruthi generate powerful kicks, toms, and other percussive sounds, as welling as widening the pitch range for sound design in other contexts, as an LFO can now bring the pitch from almost three octaves above the root pitch to nearly three below in one sweep.
+
+Because the drum modulation destinations allow for much greater range of control, the range of the OSC modulation sources has been narrowed, fro +/- 16 semitones to 8 semitones. This allows for finer control when using LFOs or other sources to modulate pitch. Patches made with other Shruthi firmwares may need to be adjusted to sound identical if they have pitch controlled by modulation.
+
 Y A M - Yet Another Mutation
 
 This is a project for various firmware modifications and hacks for Shruthi-1, a digital/analog hybrid MIDI monosynth. 
